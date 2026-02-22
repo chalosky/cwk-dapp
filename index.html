@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CWK DApp – CSP Safe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External JS only -->
+  <script type="module" src="./app.js"></script>
+
+  <style>
+    body { font-family: Arial; max-width: 700px; margin: 40px auto; }
+    button { padding: 10px; margin: 5px 0; }
+    input { padding: 8px; width: 100%; margin: 5px 0; }
+    .card { border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<h2>CharlesWK (CWK) Token DApp – Sepolia</h2>
+
+<div class="card">
+  <button id="connectBtn">Connect Wallet</button>
+  <p id="walletAddress">Not connected</p>
+</div>
+
+<div class="card">
+  <h3>Balance</h3>
+  <button id="balanceBtn">Get Balance</button>
+  <p id="balance">--</p>
+</div>
+
+<div class="card">
+  <h3>Send Tokens</h3>
+  <input id="recipient" placeholder="Recipient Address" />
+  <input id="amount" placeholder="Amount" />
+  <button id="sendBtn">Send</button>
+  <p id="txStatus">--</p>
+</div>
+
+</body>
+</html>
